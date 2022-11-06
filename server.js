@@ -20,7 +20,4 @@ app.get('/', (req, res) => {
       res.json(notes);
     })
   
-    app.post('/api/notes', (req, res) => {
-        const newNote = createNewNote(req.body, allNotes);
-        res.json(newNote);
-    });
+    
